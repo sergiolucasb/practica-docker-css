@@ -1,5 +1,6 @@
 body {
-    margin: 0;    
+    margin: 0;
+    overflow-y: initial;
 }
 
 section:first-child{
@@ -17,8 +18,13 @@ section:first-child span {
     align-items: center;
 }
 
-section:first-child span svg {
+section:first-child span svg:first-child {
     margin-right: 20px;
+}
+
+section:first-child span svg:last-child {
+    width: 16px;
+    fill: #FFFFFF;
 }
 
 section:first-child span svg + a {
@@ -26,11 +32,6 @@ section:first-child span svg + a {
     font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
     font-weight: bold;
 }
-
-section:first-child span svg + a:hover {
-    border-bottom: 2px solid #CCCDDB;
-} /*Añadir outline solo abajo*/
-
 
 section:first-child span a {
     text-decoration: none;
@@ -42,3 +43,119 @@ section:first-child span a {
 section:first-child span a:hover {
     text-decoration: underline;
 }
+
+header {
+    max-width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E1E2E6;
+    flex-wrap: unset;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a:first-child {
+    margin-right: 20px;
+    width: 150px;
+}
+
+header nav a {
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    color: #505968;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header span {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header span svg {
+    width: 16px;
+}
+
+header span button {
+    max-width: 150px;
+    font-size: 1.2em;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#sign-in {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    outline: 3px solid #D3D5DC;
+}
+
+#get-started {
+    background-color: #1D63ED;
+    border-radius: 4px;
+    border: none;
+    outline: 3px solid #1D63ED;
+    color: #FFFFFF;
+    padding: 10px 8px;
+}
+
+#sign-in:hover {
+    background-color: #EFEFF2;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#get-started:hover {
+    cursor: pointer;
+    background-color: #0C49C2;
+    outline-color: #0C49C2;
+    transition: .2s;
+}
+
+header span svg:last-child {
+    fill: #1C90ED;
+    width: 36px;
+    display: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: lightblue;
+  }
+  section:first-child{
+    padding: 20px 100px;
+  }
+
+  header nav a:not(header nav a:first-child), header span svg:first-child, header span button{
+    display: none;
+  }
+
+  header span svg:last-child {
+    display: inline;
+  }
+}
+
+
+
+
+
+
+
+
+
