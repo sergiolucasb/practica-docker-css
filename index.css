@@ -25,7 +25,6 @@ section:first-child span a svg:last-child {
     width: 1.2vw;
     fill: #CCCDDB;
     margin-left: 10px;
-
 }
 
 section:first-child span svg + a {
@@ -78,6 +77,24 @@ header nav a {
     font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
     color: #505968;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header nav a svg:not(header nav a:first-child svg) {
+    margin-left: 5px;
+    width: 16px;
+    fill: #505968;
+    transition: .5s;
+}
+
+header nav a:hover svg:not(header nav a:first-child svg) {
+    transform: rotate(180deg);
+    transition: .2s;
+}
+
+.enlace-desplegable:hover {
+    text-decoration: none;
 }
 
 header nav a:hover {
@@ -236,7 +253,7 @@ header + section img {
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
   section:first-child{
     padding: 10px 50px;
   }
