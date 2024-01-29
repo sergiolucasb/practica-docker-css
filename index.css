@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-section:first-child{
+article:first-child{
     max-width: 100%;
     height: 30px;
     background-color: #00084D;
@@ -12,28 +12,28 @@ section:first-child{
 
 }
 
-section:first-child span {
+article:first-child span {
     display: flex;
     align-items: center;
 }
 
-section:first-child span svg:first-child:not(section:first-child span a svg:last-child) {
+article:first-child span svg:first-child:not(article:first-child span a svg:last-child) {
     margin-right: 20px;
 }
 
-section:first-child span a svg:last-child {
+article:first-child span a svg:last-child {
     width: 1.2vw;
     fill: #CCCDDB;
     margin-left: 10px;
 }
 
-section:first-child span svg + a {
+article:first-child span svg + a {
     color: #CCCDDB;
     font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
     font-weight: bold;
 }
 
-section:first-child span a {
+article:first-child span a {
     text-decoration: none;
     color: #CCCDDB;
     font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
@@ -42,12 +42,12 @@ section:first-child span a {
     align-items: center;
 }
 
-section:first-child span:first-child a:hover {
+article:first-child span:first-child a:hover {
     border-bottom: 2px solid #CCCDDB;
     margin-bottom: -2px;
 }
 
-section:first-child span:last-child a:hover {
+article:first-child span:last-child a:hover {
     text-decoration: underline;
 }
 
@@ -113,7 +113,6 @@ header span svg {
 
 .boton-blanco, .boton-azul {
     display: flex;
-    font-size: 1.2em;
     font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
     font-weight: 700;
     border: none;
@@ -136,10 +135,12 @@ header span svg {
 }
 
 header span .boton-blanco {
+    font-size: 1.2em;
     padding: 10px 20px;
 }
 
 header span .boton-azul {
+    font-size: 1.2em;
     padding: 10px 8px;
 }
 
@@ -224,6 +225,7 @@ header + section article .boton-azul:hover svg:last-child{
 
 header + section article .boton-azul a {
     padding: 16px 24px;
+    font-size: 1.5em;
     text-decoration: none;
     color: #FFFFFF;
     border-right: 1px solid #1c8aed;
@@ -240,6 +242,7 @@ header + section article .boton-azul svg:last-child {
 }
 
 header + section article .boton-blanco {
+    font-size: 1.2em;
     padding: 20px 40px;
 }
 
@@ -248,27 +251,28 @@ header + section img {
     border-radius: 4px;
 }
 
-#what-is-docker {
+section {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
-#what-is-docker h2 {
+section h2 {
     text-align: center;
     font-family: 'Poppins', 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 1.9vw;
     background: linear-gradient(to right, #00094f , #1d63ec); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0;
 }
 
-#what-is-docker h3 {
+section h3 {
     text-align: center;
-    width: 50vw;
+    width: 70vw;
     font-size: 3.5vw;
     font-family: 'Poppins', 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
     font-weight: 900;
@@ -277,9 +281,9 @@ header + section img {
     line-height: 1.2em;
 }
 
-#what-is-docker h3 + p {
+section h3 + p {
     text-align: center;
-    width: 50vw;
+    width: 60vw;
     font-size: 1.2vw;
     font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
     color: #0b214a;
@@ -377,20 +381,104 @@ header + section img {
     border-radius: 20px;
 }
 
+#why-use-docker p + article {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 88%;
+}
 
+#why-use-docker p + article img {
+    width: 25%;
+}
+
+#why-use-docker p + article + span {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#why-use-docker p + article + span div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#why-use-docker p + article + span div span:first-child {
+    background-color: pink;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    font-size: 6vw;
+    font-weight: 600;
+    background: linear-gradient(to right, #00094f , #1d63ec); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#why-use-docker p + article + span div p {
+    text-align: center;
+    margin: -10px;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    color: #11264e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERY HEADER*/
 
 @media only screen and (max-width: 1250px) {
-  section:first-child{
+article:first-child {
     padding: 10px 50px;
-  }
+}
 
-  section:first-child span a{
+article:first-child span a {
     font-size: 1.6vw;
-  }
+}
 
-  section:first-child span svg {
+article:first-child span svg {
     width: 5vw;
-  }
+}
+
+header nav a {
+    font-size: smaller;
+    padding: 5px 8px;
+}
+
+header span svg {
+    width: 12px;
+}
+
+header span .boton-blanco, header span .boton-azul{
+    font-size: 1em;
+}
+
+header nav a svg:not(header nav a:first-child svg) {
+    width: 10px;
+}
+
+section h3 + p {
+    font-size: 1.4vw;
+}
+}
+
+
+
+
+@media only screen and (max-width: 981px) {
+
 
   header nav a:not(header nav a:first-child), header span svg:first-child, header span .boton-azul, header span .boton-blanco{
     display: none;
@@ -408,18 +496,19 @@ header + section img {
     width: 80%;
   }
 
-  #what-is-docker h2 {
-    font-size: 2.7vw;
+
+section h2 {
+    font-size: 3vw;
   }
 
-  #what-is-docker h3{
-    width: 75vw;
-    font-size: 5vw;
+section h3{
+    width: 90vw;
+    font-size: 6vw;
   }
 
-  #what-is-docker h3 + p {
+section h3 + p {
     width: 80vw;
-    font-size: 2.3vw;
+    font-size: 2vw;
   }
 
   #what-is-docker article {
@@ -431,21 +520,35 @@ header + section img {
   }
 
   #what-is-docker article div h4{
-    font-size: 4vw;
+    font-size: 5vw;    
   }
 
   #what-is-docker article img:last-child {
     margin-top: 10px;
-    width: 80vw;
+    width: 70vw;
   }
+
+  #why-use-docker p {
+    margin-bottom: 20px;
+  }
+
+  #why-use-docker p + article {
+    width: 70%;
+  }
+
+  #why-use-docker p + article img {
+    width: 50%;
+  }
+
+  #why-use-docker p + article + span {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  #why-use-docker p + article + span div span:first-child {
+    font-size: 9vw;
+  }
+
+
   
 }   
-
-
-
-
-
-
-
-
-
