@@ -454,7 +454,7 @@ article:first-child span svg {
 
 header nav a {
     font-size: smaller;
-    padding: 5px 8px;
+    padding: 20px 8px;
 }
 
 header span svg {
@@ -473,6 +473,16 @@ section h3 + p {
     font-size: 1.4vw;
 }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -548,7 +558,43 @@ section h3 + p {
   #why-use-docker p + article + span div span:first-child {
     font-size: 9vw;
   }
-
-
-  
 }   
+
+@media only screen and (max-width: 650px) {
+    article:first-child {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+        gap: 10px;
+    }
+
+    article:first-child span:first-child svg {
+        width: 50px;
+    }
+
+    article:first-child span:first-child a {
+        font-size: 2.4vw;
+    }
+
+    article:first-child span:last-child a {
+        font-size: 2.4vw;
+    }
+
+    section h3 + p {
+        margin-top: 10px;
+        font-size: 3vw;
+    }
+
+    #what-is-docker article div {
+        gap: 0.4em;
+    }
+
+    #what-is-docker article img:last-child {
+        width: 80vw;
+    }
+
+    #why-use-docker p + article + span {
+        gap: 3em;
+    }
+
+}
