@@ -173,7 +173,7 @@ header + section {
     flex-direction: column;
     align-items: center;
     background: url(img/image-background.svg);
-    border-radius: 0% 0% 100% 100% / 50% 50% 20% 20% ;
+    background-repeat: no-repeat;
 }
 
 header + section h1 {
@@ -423,7 +423,72 @@ section h3 + p {
     color: #11264e;
 }
 
+#container-development div:first-child {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+#container-development div:first-child span:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 60%;
+}
+
+#container-development div:first-child span:first-child h2 {
+    width: fit-content;
+    text-align: start;
+}
+
+#container-development div:first-child span:first-child h3 {
+    text-align: start;
+}
+
+#container-development div:first-child span:first-child p {
+    text-align: start;
+    width: 100%;
+    color: #3e434d;
+    margin-bottom: 20px;
+}
+
+#container-development div:first-child span:first-child a {
+    font-size: 1.1em;
+}
+
+#container-development div:first-child span:first-child a svg {
+    width: 14px;
+    margin-left: 7px;
+    fill: #286bed;
+}
+
+.enlace-azul {
+    display: flex;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    text-decoration: none;
+    font-weight: 600;
+    color: #286bed;
+    width: fit-content;
+}
+
+.enlace-azul:hover {
+    border-bottom: 2px solid #286bed;
+    margin-bottom: -2px;
+    border-color: #26437a;
+    color: #26437a;
+    transition: color 0.5s;
+}
+
+#container-development div:first-child img:last-child {
+    width: 20vw;
+}
+
+section + img {
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
 
 
 
@@ -558,6 +623,24 @@ section h3 + p {
   #why-use-docker p + article + span div span:first-child {
     font-size: 9vw;
   }
+
+  #container-development div:first-child{
+    flex-direction: column;
+  }
+
+  #container-development div:first-child span:first-child {
+    max-width: 100%;
+  }
+
+  #container-development div:first-child img:last-child {
+    margin-top: 50px;
+    width: 20vw;
+  }
+  section + img {
+    width: 80%;
+  }
+
+
 }   
 
 @media only screen and (max-width: 650px) {
@@ -597,4 +680,75 @@ section h3 + p {
         gap: 3em;
     }
 
+    #container-development div:first-child img:last-child {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    article:first-child {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    article:first-child span svg {
+        display: none;
+    }
+
+    article:first-child span:first-child a, article:first-child span:last-child a {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    header + section h1 {
+        width: 80%;
+        font-size: 2em;
+    }
+
+    header + section h1 + p {
+        font-size: 1.2em;
+    }
+
+    header + section article {
+        margin: 50px;
+    }
+
+    header + section article .boton-azul {
+        display: none;
+    }
+
+    header + section article .boton-blanco {
+        padding: 15px 20px;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+
+    section h3 {
+        width: 90%;
+        font-size: 2.2em;
+    }
+
+    section h3 + p {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    #what-is-docker p + span button, #what-is-docker p + span .boton-activo {
+        font-size: 1em;
+        padding: 15px 20px;
+    }
+
+    #what-is-docker article div h4 {
+        font-size: 2.5em;
+    }
+
+    #why-use-docker p + article + span {
+        gap: 4em;
+    }
+
+    #why-use-docker p + article + span div span:first-child {
+        font-size: 4em;
+    }
 }
