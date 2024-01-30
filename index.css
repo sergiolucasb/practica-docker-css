@@ -457,7 +457,7 @@ section h3 + p {
     font-size: 1.1em;
 }
 
-#container-development div:first-child span:first-child a svg {
+.enlace-azul svg {
     width: 14px;
     margin-left: 7px;
     fill: #286bed;
@@ -488,8 +488,34 @@ section + img {
     display: flex;
     margin: auto;
     width: 50%;
+    margin-bottom: 100px;
 }
 
+#connect h3 + p {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+#connect h3 + p + .enlace-azul,  #connect h4 + p + .enlace-azul {
+    font-size: 1.2em;
+}
+
+#connect h4 {
+    color: #0b214a;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#connect h4 + p {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    width: 30%;
+    color: #6a7588;
+}
 
 
 
@@ -640,6 +666,13 @@ section h3 + p {
     width: 80%;
   }
 
+  #connect h3 + p {
+    width: 80%;
+  }
+
+  #connect h4 + p {
+    width: 80%;
+  }
 
 }   
 
