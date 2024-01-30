@@ -89,7 +89,7 @@ header nav a svg:not(header nav a:first-child svg) {
 }
 
 header nav a:hover svg:not(header nav a:first-child svg) {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
     transition: .2s;
 }
 
@@ -260,6 +260,7 @@ section {
 }
 
 section h2 {
+    width: fit-content;
     text-align: center;
     font-family: 'Poppins', 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
     font-weight: 500;
@@ -470,6 +471,7 @@ section h3 + p {
     font-weight: 600;
     color: #286bed;
     width: fit-content;
+    transition: .5s;
 }
 
 .enlace-azul:hover {
@@ -523,7 +525,7 @@ section + img {
 
 #develop-from-code h2 {
     margin-top: 120px;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: #FFFFFF;
     font-size: 3.5vw;
     font-weight: 600;
     width: 50%;
@@ -533,7 +535,7 @@ section + img {
 #develop-from-code h2 + p {
     text-align: center;
     font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
-    color: white;
+    color: #FFFFFF;
     font-size: 1.2vw;
     width: 60vw;
 }
@@ -559,13 +561,13 @@ section + img {
 
 #develop-from-code a + article div p {
     font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
-    color: white;
+    color: #FFFFFF;
     font-size: 1.1em;
 }
 
 #develop-from-code h3 {
     margin: 50px 0px;
-    color: white;
+    color: #FFFFFF;
     font-size: 2vw;
     font-weight: 500;
 }
@@ -593,15 +595,103 @@ section + img {
     opacity: 0.5;
 }
 
+#how-to-get-started div:first-child {
+    width: 80%;
+}
 
+#how-to-get-started div:first-child h2 {
+    text-align: start;
+}
 
+#how-to-get-started div:first-child h3 {
+    text-align: start;
+    width: 100%;
+    font-size: 3vw;
+    margin-bottom: 50px;
+}
 
+#how-to-get-started div:first-child + article {
+    display: flex;
+    max-width: 80vw;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
 
+#how-to-get-started div:first-child + article span {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 29%;
+}
 
+#how-to-get-started div:first-child + article span img{
+    width: 32px;
+    margin-bottom: 10px;
+}
 
+#how-to-get-started div:first-child + article span h3 {
+    text-align: start;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
 
+#how-to-get-started div:first-child + article span p {
+    text-align: start;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #7a8394;
+}
 
-/*MEDIA QUERY HEADER*/
+#how-to-get-started article:last-child {
+    width: 80%;
+    padding: 85px 20px;
+    background-color: #1d63ed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+}
+
+#how-to-get-started article:last-child span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#how-to-get-started article:last-child h2 {
+    text-align: left;
+    -webkit-text-fill-color: #FFFFFF;
+    font-weight: 600;
+    font-size: 2.3em;
+    margin: 0;
+}
+
+#how-to-get-started article:last-child p {
+    color: #FFFFFF;
+    font-size: 1.3em;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    margin: 0;
+}
+
+#how-to-get-started article:last-child a {
+    text-decoration: none;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #1d63ec;
+    padding: 15px 40px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#how-to-get-started article:last-child a:hover {
+    background-color: #EFEFF2;
+    transition: .3s;
+}
 
 @media only screen and (max-width: 1250px) {
 article:first-child {
@@ -639,6 +729,37 @@ section h3 + p {
 
 #develop-from-code h2 + p {
     font-size: 1.4vw;
+}
+
+#how-to-get-started div:first-child h3 {
+    font-size: 4vw;
+}
+
+#how-to-get-started div:first-child + article {
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+}
+
+#how-to-get-started div:first-child + article span {
+    max-width: 100%;
+}
+
+#how-to-get-started div:first-child + article span p {
+    width: 100%;
+}
+
+#how-to-get-started article:last-child {
+    padding: 35px;
+    flex-direction: column;
+}   
+
+#how-to-get-started article:last-child h2 {
+    margin: 10px 0px;
+}
+
+#how-to-get-started article:last-child p {
+    margin-bottom: 30px;
 }
 
 }
@@ -767,6 +888,21 @@ section h3 + p {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+  }
+
+  #how-to-get-started div:first-child h3 {
+    font-size: 6vw;
+  }
+
+
+
+  #how-to-get-started article:last-child h2 {
+    font-size: 1.8em;
+    line-height: 1.1em;
+  }
+  
+  #how-to-get-started article:last-child p {
+    font-size: 1.2em;
   }
 }   
 
@@ -909,4 +1045,7 @@ section h3 + p {
         font-size: 1.5em;
     }
 
+    #how-to-get-started div:first-child h3 {
+        font-size: 2.2em;
+    }
 }
