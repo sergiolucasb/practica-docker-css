@@ -517,8 +517,81 @@ section + img {
     color: #6a7588;
 }
 
+#develop-from-code {
+    background-color: #03061e;
+}
 
+#develop-from-code h2 {
+    margin-top: 120px;
+    -webkit-text-fill-color: white;
+    font-size: 3.5vw;
+    font-weight: 600;
+    width: 50%;
+    line-height: 1.2em;
+}
 
+#develop-from-code h2 + p {
+    text-align: center;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    color: white;
+    font-size: 1.2vw;
+    width: 60vw;
+}
+
+#develop-from-code h2 + p .enlace-azul {
+    font-size: 1.2em;
+}
+
+#develop-from-code a + article {
+    margin-top: 80px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 6em;
+}
+
+#develop-from-code a + article div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#develop-from-code a + article div p {
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    color: white;
+    font-size: 1.1em;
+}
+
+#develop-from-code h3 {
+    margin: 50px 0px;
+    color: white;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+#develop-from-code h3 + article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    margin-bottom: 150px;    
+}
+
+#develop-from-code h3 + article span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+}
+
+#develop-from-code h3 + article span img {
+    width: 140px;
+    object-fit: contain;
+    opacity: 0.5;
+}
 
 
 
@@ -563,19 +636,12 @@ header nav a svg:not(header nav a:first-child svg) {
 section h3 + p {
     font-size: 1.4vw;
 }
+
+#develop-from-code h2 + p {
+    font-size: 1.4vw;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 @media only screen and (max-width: 981px) {
@@ -674,6 +740,34 @@ section h3 + p {
     width: 80%;
   }
 
+  #develop-from-code h2 {
+    width: 90vw;
+    font-size: 6vw;
+  }
+
+  #develop-from-code h2 + p {
+    font-size: 2vw;
+  }
+
+  #develop-from-code a + article {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  #develop-from-code h3 {
+    font-size: 3.3vw;
+  }
+
+  #develop-from-code h3 + article {
+    flex-direction: row;
+  }
+
+  #develop-from-code h3 + article span {
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }   
 
 @media only screen and (max-width: 650px) {
@@ -715,6 +809,19 @@ section h3 + p {
 
     #container-development div:first-child img:last-child {
         width: 150px;
+    }
+
+    #develop-from-code h2 + p {
+        width: 90%;
+        font-size: 3vw;
+    }
+
+    #develop-from-code h3 {
+        font-size: 4vw;
+    }
+
+    #develop-from-code h3 + article span img {
+        width: 120px;
     }
 }
 
@@ -784,4 +891,22 @@ section h3 + p {
     #why-use-docker p + article + span div span:first-child {
         font-size: 4em;
     }
+
+    #develop-from-code h2 {
+        width: 80%;
+        font-size: 2.2em;
+    }
+
+    #develop-from-code h2 + p {
+        font-size: 1.1em;
+    }
+
+    #develop-from-code a + article div p {
+        font-size: 1em;
+    }
+
+    #develop-from-code h3 {
+        font-size: 1.5em;
+    }
+
 }
