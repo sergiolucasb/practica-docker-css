@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 article:first-child{
@@ -693,6 +694,134 @@ section + img {
     transition: .3s;
 }
 
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div:first-child  {
+    width: 80%;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+footer div:first-child svg {
+    fill: #1d63ec;
+    width: 150px;
+}
+
+footer div:first-child article {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div:first-child span {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer div:first-child span a {
+    text-decoration: none;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    color: #3e434d;
+    font-size: 0.9em;   
+}
+
+footer div:first-child span a:hover {
+    text-decoration: underline;
+}
+
+footer div:first-child span .enlace-titulo {
+    font-size: 1.1em;
+    font-family: 'Poppins', 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+footer div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #c3c3c3;
+    padding-top: 20px;
+    margin-top: 100px;
+    width: 80%;
+    margin-bottom: 75px;
+}
+
+footer div:last-child span:first-child {
+    display: flex;
+    align-items: center ;
+}
+
+footer div:last-child span:first-child a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100%;
+    margin-right: 20px;
+    background-color: #1d63ed;
+}
+
+
+footer div:last-child span:first-child a svg{
+    fill: #FFFFFF;
+    width: 16px;
+}
+
+#facebook-logo {
+    padding: 6px 12px;
+}
+
+footer div:last-child span + p {
+    display: flex;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    font-size: 0.7em;
+    color: #656d7a;
+}
+
+footer div:last-child span + p a {
+    text-decoration: underline;
+    color: #000000;
+    margin: 0px 5px;
+    color: #656d7a;
+}
+
+footer div:last-child p + a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 0.75em;
+    color: #3875ee;
+    font-family: 'Roboto', 'Courier New', 'Arial', 'Sans Serif';
+    background-color: #e9e9ed;
+    border: 1px solid #3875ee;
+    transition: .2s;
+}
+
+footer div:last-child p + a:hover {
+    background-color: #3875ee;
+    color: #e9e9ed;
+    transition: .2s;
+}
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1250px) {
 article:first-child {
     padding: 10px 50px;
@@ -760,6 +889,24 @@ section h3 + p {
 
 #how-to-get-started article:last-child p {
     margin-bottom: 30px;
+}
+
+footer div:first-child span {
+    width: 25%;
+}
+
+footer div:first-child span:first-child {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer div:last-child {
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer div:last-child span + p {
+    font-size: 0.6em;
 }
 
 }
@@ -904,6 +1051,10 @@ section h3 + p {
   #how-to-get-started article:last-child p {
     font-size: 1.2em;
   }
+
+  footer div:first-child span {
+    width: 20%;
+  }
 }   
 
 @media only screen and (max-width: 650px) {
@@ -1047,5 +1198,9 @@ section h3 + p {
 
     #how-to-get-started div:first-child h3 {
         font-size: 2.2em;
+    }
+
+    footer div:first-child span {
+        width: 50%;
     }
 }
